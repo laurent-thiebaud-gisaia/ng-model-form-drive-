@@ -1,0 +1,19 @@
+<div *ngIf="isSelect(); let typedControl">
+    <mat-form-field>
+        <mat-label>{{ typedControl.label }}</mat-label>
+        <mat-select [formControl]="typedControl" [required]="!typedControl.optional">
+            <mat-option *ngIf="typedControl.optional"></mat-option>
+            <mat-option *ngFor="let opt of typedControl.syncOptions" [value]="opt.key">
+                {{opt.value }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div *ngIf="isInput(); let typedControl">
+    <mat-form-field>
+        <mat-label>{{ typedControl.label }}</mat-label>
+        <input matInput [formControl]="typedControl" [type]="typedControl.inputType"
+            [required]="!typedControl.optional">
+    </mat-form-field>
+</div>

@@ -1,0 +1,11 @@
+<div [formGroup]="configFormGroup">
+    <div *ngFor="let control of controlsAsValue">
+        <span *ngIf="control.enabled" class="form-control">
+            <app-md-form-control [control]="control"></app-md-form-control>
+            <span class=“description”>
+                {{ control.description }}
+            </span>
+        </span>
+
+    </div>
+</div>
