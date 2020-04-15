@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MDFormControl as MDFormControl, MDSelectFormControl as MDSelectFormControl, MDInputFormControl as MDInputFormControl } from 'src/app/models/md-form-model';
+import { MDFormControl as MDFormControl, MDSelectFormControl as MDSelectFormControl, MDInputFormControl as MDInputFormControl } from '../../models/md-form-model';
 
 @Component({
   selector: 'app-md-form-control',

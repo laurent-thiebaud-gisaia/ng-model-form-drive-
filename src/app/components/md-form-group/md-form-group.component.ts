@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { MDFormControl as MDConfFormControl } from 'src/app/models/md-form-model';
+import { MDFormControl as MDConfFormControl } from '../../models/md-form-model';
 import { Subscription } from 'rxjs';
 
 @Component({
